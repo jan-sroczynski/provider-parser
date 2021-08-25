@@ -36,6 +36,7 @@ def add_to_index(table, ind, value):
   else:
     table[ind] += f'| {value}'
 
+
 csv_file = open('out.csv', 'w')
 all_rules = []
 for provider in provider_list:
@@ -54,5 +55,3 @@ for provider in provider_list:
   rules_list.insert(0, provider)
   csv_file.write('; '.join(rules_list))
   csv_file.write('\n')
-
-
